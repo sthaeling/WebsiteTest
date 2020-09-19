@@ -4,32 +4,13 @@
   <meta content="text/js; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
   <title>TestGame</title>
 
-  <link async="async" defer="defer" rel="stylesheet" href="../../stylesheets/main.css">
   <% include ../partials/header.ejs %>
+
 </head>
 <body id="body">
+
 <% include ../partials/nav.ejs %>
-<canvas id="canvas" class="canvas" height="300" width="300"></canvas>
-<script>
-  function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    var expires = "expires" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    location.reload();
-  }
-</script>
 
-<p>Settings:</p>
-<div class="config">
-  <label>
-    <span>Hard Borders:</span>
-    <input type="checkbox" id="borders" onchange="setCookie('borders', this.checked, 14);">
-  </label>
-</div>
-
-<% include snake/snake.ejs %>
-<% include snake/fruit.ejs %>
-<% include snake/draw.ejs %>
+<a href="snake">Play Snake</a>
 </body>
 </html>
