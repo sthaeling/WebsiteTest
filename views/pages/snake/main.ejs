@@ -20,12 +20,19 @@
 <% include ../../partials/nav.ejs %>
 
 <div class="content">
+
     <div class="game-box">
         <center>
             <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
         </center>
     </div>
 
+    <div class="control">
+        <div class="arrowUp" onclick="let click = new KeyboardEvent('ArrowUp'); click.key = 'ArrowUp';console.log(click); window.dispatchEvent(click);">A</div>
+        <div class="arrowDown" onclick="let click = new KeyboardEvent('arrowDown'); click.key = 'arrowDown';console.log(click); window.dispatchEvent(click);">V</div>
+        <div class="arrowLeft" onclick="let click = new KeyboardEvent('arrowLeft'); click.key = 'arrowLeft';console.log(click); window.dispatchEvent(click);"><</div>
+        <div class="arrowRight" onclick="let click = new KeyboardEvent('arrowRight'); click.key = 'arrowRight';console.log(click); window.dispatchEvent(click);">></div>
+    </div>
     <div class="config">
         <p>Settings:</p>
         <label>

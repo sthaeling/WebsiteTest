@@ -1,5 +1,6 @@
 body {
   background: #191341;
+  height: 100%;
 
   font-family: Arial, serif;
   font-size: 22px;
@@ -18,17 +19,56 @@ canvas.canvas {
 }
 
 .content .game-box {
-  padding: 3rem;
+  padding: 14rem;
   margin-top: 2rem;
 }
 
 .config {
+  color: #eeeeee;
   margin-left: 25%;
 }
 
 .config .borders-title {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.control {
+  color: #eeeeee;
+  font-size: 50px;
+  line-height: 50px;
+  position: absolute;
+  height: 585px;
+  width: 585px;
+  top: 130px;
+}
+
+.control .arrowUp, .control .arrowDown, .control .arrowLeft, .control .arrowRight {
+  height: 20%;
+  width: 20%;
+  line-height: 110px;
+  position: absolute;
+  text-align: center;
+}
+
+.control .arrowUp {
+  top: 0;
+  left: 40%;
+}
+
+.control .arrowDown {
+  bottom: 0;
+  left: 40%;
+}
+
+.control .arrowLeft {
+  top: 40%;
+  left: 0;
+}
+
+.control .arrowRight {
+  top: 40%;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {
