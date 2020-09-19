@@ -7,11 +7,6 @@
     <% include ../../partials/header.ejs %>
 </head>
 <body id="body">
-
-<% include ../../partials/nav.ejs %>
-
-<canvas id="canvas" class="canvas" height="300" width="300"></canvas>
-
 <script>
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
@@ -22,12 +17,22 @@
     }
 </script>
 
-<p>Settings:</p>
-<div class="config">
-    <label>
-        <span>Hard Borders:</span>
-        <input type="checkbox" id="borders" onchange="setCookie('borders', this.checked, 14);">
-    </label>
+<% include ../../partials/nav.ejs %>
+
+<div class="content">
+    <div class="game-box">
+        <center>
+            <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
+        </center>
+    </div>
+
+    <div class="config">
+        <p>Settings:</p>
+        <label>
+            <span class="borders-title">Hard Borders:</span>
+            <input type="checkbox" id="borders" onchange="setCookie('borders', this.checked, 14);">
+        </label>
+    </div>
 </div>
 
 <% include resources/snake.ejs %>

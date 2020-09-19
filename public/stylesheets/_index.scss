@@ -1,9 +1,24 @@
-//useless so far
-
 body {
+  background: #191341;
+
+  color: white;
   font-family: Arial, serif;
   font-size: 22px;
   line-height: 22px;
+  width: 100%;
+}
+
+//@media screen and (min-width: 768px) {
+//  body {
+//    margin-left: 20%;
+//    margin-right: 20%;
+//    width: 60%;
+//  }
+//}
+
+.content {
+  background: #130e32;
+  margin: 0;
 }
 
 canvas.canvas {
