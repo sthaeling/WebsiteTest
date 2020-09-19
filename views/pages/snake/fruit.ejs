@@ -1,0 +1,26 @@
+<script>
+function Fruit() {
+    this.x;
+    this.y;
+
+    this.pickLocation = function () {
+        valueX = (Math.floor(Math.random() * rows -1) + 1) * scale;
+        valueY = (Math.floor(Math.random() * columns -1) + 1) * scale;
+
+        for (let i = 0; i < snake.tail.length; i++) {
+            while (snake.tail[i].x === valueX && snake.tail[i].y === valueY) {
+                valueX = Math.random();
+                valueY = Math.random();
+            }
+        }
+
+        this.x = valueX;
+        this.y = valueY;
+    }
+
+    this.draw = function () {
+        ctx.fillStyle = '#ff0042';
+        ctx.fillRect(this.x, this.y, scale, scale);
+    }
+}
+</script>

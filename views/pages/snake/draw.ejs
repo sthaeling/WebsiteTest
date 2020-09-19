@@ -1,0 +1,57 @@
+<script>
+const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
+
+const scale = 10;
+const rows = canvas.height / scale;
+const columns = canvas.width / scale;
+
+if (getCookie('borders') === 'true') {
+    document.getElementById('borders').checked = true;
+} else if (getCookie('borders') === 'false') {
+    document.getElementById('borders').checked = false;
+}
+
+(function setup() {
+    snake = new Snake();
+    fruit = new Fruit();
+
+    fruit.pickLocation();
+    snake.draw();
+
+    window.setInterval(() => {
+        ctx.clearRect(0,0,canvas.width, canvas.height)
+        snake.update();
+        fruit.draw();
+        snake.draw();
+
+        if (snake.eat(fruit)) {
+            fruit.pickLocation();
+            fruit.draw();
+        }
+    }, 100);
+}());
+
+window.addEventListener('keydown', ((evt) => {
+    const direction = evt.key.replace('Arrow', '');
+    snake.changeDirection(direction);
+}))
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
