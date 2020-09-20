@@ -5,7 +5,13 @@
   padding-top: 4rem;
   touch-action: none;
 }
-
+@media screen and (min-width: 768px) {
+  .content {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+}
 .content .game-box {
   margin: 2rem 0 3rem 0;
 }
@@ -16,7 +22,6 @@
   padding-top: 4rem;
   width: 33%;
 }
-
 .config .borders-title {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -28,12 +33,6 @@
   text-align: center;
   width: 300px;
 }
-
-.control .control-top, .control .control-middle, .control .control-bottom {
-  display: flex;
-  flex-direction: row;
-}
-
 .control .control-panel {
   color: #eeeeee;
   font-size: 50px;
@@ -41,20 +40,16 @@
   line-height: 100px;
   width: 100px;
 }
-
 .control .control-panel.arrowUp, .control .control-panel.arrowLeft, .control .control-panel.arrowRight, .control .control-panel.arrowDown {
   background-color: #404040;
   border: 1px outset black;
   border-radius: 25px;
 }
-
-@media screen and (min-width: 768px) {
-  .content {
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 60%;
-  }
+.control-top, .control-middle, .control-bottom {
+  display: flex;
+  flex-direction: row;
 }
+
 canvas.canvas {
   background-color: #404040;
   height: 300px;
