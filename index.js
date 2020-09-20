@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 var sass = require('sass');
+
 sass.render({file: 'public/stylesheets/_index.scss'}, function (err, result) {})
 
 express()

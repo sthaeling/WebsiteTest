@@ -1,0 +1,57 @@
+.content {
+  background: #130e32;
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+  touch-action: none;
+}
+
+.content .game-box {
+  margin: 2rem 0 3rem 0;
+}
+
+.config {
+  color: #eeeeee;
+  text-align: center;
+  padding-top: 4rem;
+  width: 33%;
+}
+
+.config .borders-title {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+}
+
+.control .control-top, .control .control-middle, .control .control-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.control .control-panel {
+  color: #eeeeee;
+  font-size: 50px;
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+}
+
+.control .control-panel.arrowUp, .control .control-panel.arrowLeft, .control .control-panel.arrowRight, .control .control-panel.arrowDown {
+  background-color: #404040;
+  border: 1px outset black;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+}

@@ -20,11 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_components/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_components/canvas/game.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_components/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_modules/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_modules/index/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_modules/snake/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/_variables/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/compiled/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +48,7 @@
         <option value="package.json" />
         <option value="JavaScript File" />
         <option value="Sass File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -60,20 +71,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/stylesheets/_modules" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_components" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages\snake\resources" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\img\favicon" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages\snake" />
-      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest" />
     </key>
   </component>
@@ -89,7 +101,7 @@
       <workItem from="1600530258481" duration="1923000" />
       <workItem from="1600532325983" duration="428000" />
       <workItem from="1600540062869" duration="4479000" />
-      <workItem from="1600590116736" duration="4100000" />
+      <workItem from="1600590116736" duration="6552000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>
@@ -121,25 +133,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed routing&#10;added favicon&#10;installed scss (useless for now)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600595986231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595986231" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600595973149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595973149" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600529506816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600529506816" />
+    <state x="746" y="222" key="RollbackChangesDialog" timestamp="1600595837883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="746" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595837883" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600533336957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600533336957" />
+    <state x="720" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1600595964852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595964852" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600542300365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600542300365" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1600535998247">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1600596545479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600535998247" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600596545479" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1600593535456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600593535456" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600594234775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600594234775" />
   </component>
 </project>
