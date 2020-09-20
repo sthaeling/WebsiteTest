@@ -1,0 +1,18 @@
+<script>
+    window.addEventListener('keydown', ((evt) => {
+        const direction = evt.key.replace('Arrow', '');
+        snake.changeDirection(direction);
+    }))
+
+    window.addEventListener('click', ((evt) => {
+        let controls = ['Up', 'Left', 'Right', 'Down'];
+
+        for (let i = 0; i < controls.length; i++) {
+            if (evt.target.id === controls[i]) {
+                console.log(evt.target.id.replace('arrow', ''))
+
+                snake.changeDirection(evt.target.id.replace('arrow', ''));
+            }
+        }
+    }))
+</script>

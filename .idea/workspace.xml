@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
+      <change afterPath="$PROJECT_DIR$/views/pages/snake/resources/controls.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/snake/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/main.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/snake.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/snake.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,8 @@
       <workItem from="1600528408276" duration="1639000" />
       <workItem from="1600530258481" duration="1923000" />
       <workItem from="1600532325983" duration="428000" />
-      <workItem from="1600540062869" duration="3830000" />
+      <workItem from="1600540062869" duration="4479000" />
+      <workItem from="1600590116736" duration="2626000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>

@@ -20,19 +20,6 @@
 <% include ../../partials/nav.ejs %>
 
 <div class="content">
-
-    <div class="game-box">
-        <center>
-            <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
-        </center>
-    </div>
-
-    <div class="control">
-        <div class="arrowUp" onclick="let click = new KeyboardEvent('ArrowUp'); click.key = 'ArrowUp';console.log(click); window.dispatchEvent(click);">A</div>
-        <div class="arrowDown" onclick="let click = new KeyboardEvent('arrowDown'); click.key = 'arrowDown';console.log(click); window.dispatchEvent(click);">V</div>
-        <div class="arrowLeft" onclick="let click = new KeyboardEvent('arrowLeft'); click.key = 'arrowLeft';console.log(click); window.dispatchEvent(click);"><</div>
-        <div class="arrowRight" onclick="let click = new KeyboardEvent('arrowRight'); click.key = 'arrowRight';console.log(click); window.dispatchEvent(click);">></div>
-    </div>
     <div class="config">
         <p>Settings:</p>
         <label>
@@ -40,8 +27,29 @@
             <input type="checkbox" id="borders" onchange="setCookie('borders', this.checked, 14);">
         </label>
     </div>
+    <div class="game-box">
+        <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
+        <div class="control">
+            <div class="control-top">
+                <div class="control-panel topLeft"></div>
+                <div id="Up" class="control-panel arrowUp">A</div>
+                <div class="control-panel topRight"></div>
+            </div>
+            <div class="control-middle">
+                <div id="Left" class="control-panel arrowLeft" onclick=""><</div>
+                <div class="control-panel middle"></div>
+                <div id="Right" class="control-panel arrowRight" onclick="">></div>
+            </div>
+            <div class="control-bottom">
+                <div class="control-panel bottomLeft"></div>
+                <div id="Down" class="control-panel arrowDown" onclick="">V</div>
+                <div class="control-panel bottomRight"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<% include resources/controls.ejs %>
 <% include resources/snake.ejs %>
 <% include resources/fruit.ejs %>
 <% include resources/draw.ejs %>

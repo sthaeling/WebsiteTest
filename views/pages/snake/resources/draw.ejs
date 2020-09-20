@@ -32,10 +32,6 @@ if (getCookie('borders') === 'true') {
     }, 100);
 }());
 
-window.addEventListener('keydown', ((evt) => {
-    const direction = evt.key.replace('Arrow', '');
-    snake.changeDirection(direction);
-}))
 
 function getCookie(cname) {
     var name = cname + "=";
