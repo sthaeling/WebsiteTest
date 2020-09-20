@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_components/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_components/canvas/game.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_components/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_modules/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_modules/index/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_modules/snake/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/_variables/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/compiled/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +88,7 @@
       <workItem from="1600530258481" duration="1923000" />
       <workItem from="1600532325983" duration="428000" />
       <workItem from="1600540062869" duration="4479000" />
-      <workItem from="1600590116736" duration="6552000" />
+      <workItem from="1600590116736" duration="7581000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>
