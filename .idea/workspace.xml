@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
-      <change afterPath="$PROJECT_DIR$/views/pages/snake/resources/controls.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/snake/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/main.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/draw.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <workItem from="1600530258481" duration="1923000" />
       <workItem from="1600532325983" duration="428000" />
       <workItem from="1600540062869" duration="4479000" />
-      <workItem from="1600590116736" duration="2626000" />
+      <workItem from="1600590116736" duration="4100000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>
@@ -137,5 +137,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600535998247" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1600593535456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600593535456" />
   </component>
 </project>

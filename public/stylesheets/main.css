@@ -1,10 +1,17 @@
 body {
   background: #191341;
   height: 100%;
+  width: 100vw;
 
   font-family: Arial, serif;
   font-size: 22px;
   line-height: 22px;
+
+  touch-action: none;
+}
+
+.navbar {
+  width: 100%
 }
 
 canvas.canvas {
@@ -18,10 +25,11 @@ canvas.canvas {
   display: flex;
   flex-direction: row;
   padding-top: 4rem;
+  touch-action: none;
 }
 
 .content .game-box {
-  margin-top: 2rem;
+  margin: 2rem 0 3rem 0;
 }
 
 .config {
