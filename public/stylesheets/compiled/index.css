@@ -1,14 +1,16 @@
 .content {
   background: #130e32;
   display: flex;
-  flex-direction: row;
-  padding-top: 4rem;
-  touch-action: none;
+  flex-direction: column;
+  padding: 0 calc((100vw - 300px) / 2);
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .content {
+    flex-direction: row;
     margin-left: 20%;
     margin-right: 20%;
+    padding: 4rem 0;
     width: 60%;
   }
 }
@@ -19,12 +21,17 @@
 .config {
   color: #eeeeee;
   text-align: center;
-  padding-top: 4rem;
-  width: 33%;
+  width: 100%;
 }
-.config .borders-title {
-  margin-left: 1rem;
-  margin-right: 1rem;
+@media screen and (min-width: 768px) {
+  .config {
+    width: 33%;
+  }
+}
+.config .config--borders, .config .config--drop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .control {
@@ -66,7 +73,10 @@ body {
   touch-action: none;
 }
 
-.navbar {
+nav.navbar {
+  height: 1rem;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 

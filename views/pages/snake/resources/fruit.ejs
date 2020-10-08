@@ -4,8 +4,8 @@ function Fruit() {
     this.y;
 
     this.pickLocation = function () {
-        valueX = (Math.floor(Math.random() * rows -1) + 1) * scale;
-        valueY = (Math.floor(Math.random() * columns -1) + 1) * scale;
+        var valueX = (Math.floor(Math.random() * rows -1) + 1) * scale;
+        var valueY = (Math.floor(Math.random() * columns -1) + 1) * scale;
 
         for (let i = 0; i < snake.tail.length; i++) {
             while (snake.tail[i].x === valueX && snake.tail[i].y === valueY) {

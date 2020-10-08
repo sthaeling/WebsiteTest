@@ -7,7 +7,9 @@ function Snake() {
     this.ySpeed = 0;
     this.total = 1;
     this.tail = [];
-    this.killingBorders = document.getElementById('borders').checked;
+    this.configKillingBorders = document.getElementById('borders').checked;
+    this.configLineDropping = document.getElementById('drop').checked;
+    this.count = 0;
 
     this.draw = function () {
         for (let i = 0; i < this.tail.length; i++) {
@@ -31,8 +33,18 @@ function Snake() {
 
         this.tail[this.total - 1] = { x: this.x, y: this.y };
 
+        //movement
         this.x += this.xSpeed;
         this.y += this.ySpeed;
+
+        if (this.configLineDropping) {
+            if (this.count === 30) {
+                this.y += 1 * scale;
+                this.count = 0;
+            }
+        }
+
+        this.count += 1;
 
         for (let i = 0; i < this.tail.length; i++) {
             if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
@@ -40,7 +52,7 @@ function Snake() {
             }
         }
 
-        if (this.killingBorders) {
+        if (this.configKillingBorders) {
             if (
                 this.x < 0
                 || this.x > canvas.width

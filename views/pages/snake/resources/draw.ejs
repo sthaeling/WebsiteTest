@@ -12,6 +12,12 @@ if (getCookie('borders') === 'true') {
     document.getElementById('borders').checked = false;
 }
 
+if (getCookie('drop') === 'true') {
+    document.getElementById('drop').checked = true;
+} else if (getCookie('drop') === 'false') {
+    document.getElementById('drop').checked = false;
+}
+
 (function setup() {
     snake = new Snake();
     fruit = new Fruit();
@@ -31,7 +37,6 @@ if (getCookie('borders') === 'true') {
         }
     }, 100);
 }());
-
 
 function getCookie(cname) {
     var name = cname + "=";

@@ -22,10 +22,14 @@
 <div class="content">
     <div class="config">
         <p>Settings:</p>
-        <label>
-            <span class="borders-title">Hard Borders:</span>
+        <div class="config--borders">
+            <span class="config-borders-title">Hard Borders:</span>
             <input type="checkbox" id="borders" onchange="setCookie('borders', this.checked, 14);">
-        </label>
+        </div>
+        <div class="config--drop">
+            <span class="config-cheating-title">Automatic Linedropping:</span>
+            <input type="checkbox" id="drop" onchange="setCookie('drop', this.checked, 14);">
+        </div>
     </div>
     <div class="game-box">
         <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
