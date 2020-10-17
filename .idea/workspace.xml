@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Added config linedropping&#10;other stuff">
+    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="added commands controller&#10;templates&#10;styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/_components/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/_components/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/_modules/snake/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/_modules/snake/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/compiled/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/snake/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/main.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/fruit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/fruit.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +33,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="Sass File" />
+        <option value="JavaScript File" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -48,10 +42,16 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/improvements" />
+        <entry key="$PROJECT_DIR$" value="feature/configured-server" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1hjdOvz0hbcoNoOwmitJhjl5HKM" />
   <component name="ProjectViewState">
@@ -70,24 +70,37 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.65" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/pages/commands" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages\commands" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_components" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages\snake\resources" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\img\favicon" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages\snake" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
-      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -105,7 +118,8 @@
       <workItem from="1600590116736" duration="9098000" />
       <workItem from="1602172478892" duration="1409000" />
       <workItem from="1602174122041" duration="2007000" />
-      <workItem from="1602179120495" duration="5984000" />
+      <workItem from="1602179120495" duration="8439000" />
+      <workItem from="1602920652947" duration="8065000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>
@@ -114,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600536538340</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="configured server port&#10;minor changes">
+      <created>1602190113678</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602190113678</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added commands controller&#10;templates&#10;styling">
+      <created>1602928559645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602928559645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +162,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed routing&#10;added favicon&#10;installed scss (useless for now)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed routing&#10;added favicon&#10;installed scss (useless for now)" />
+    <MESSAGE value="configured server port&#10;minor changes" />
+    <MESSAGE value="added commands controller&#10;templates&#10;styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="added commands controller&#10;templates&#10;styling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Deployment" timestamp="1602175331697">
@@ -145,34 +175,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="536" y="165" key="#SSH_Configurations/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172696039" />
+    <state x="679" y="409" key="#Stylelint" timestamp="1602927041449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="409" key="#Stylelint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602927041449" />
     <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602189529396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602189529396" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600595986231">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602927421477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595986231" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602927421477" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600595973149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595973149" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602175294984">
+    <state x="629" y="298" width="662" height="640" key="EditFileWatcherDialog" timestamp="1602927328291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602175294984" />
+    <state x="629" y="298" width="662" height="640" key="EditFileWatcherDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602927328291" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602927040519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602927040519" />
     <state x="746" y="222" key="RollbackChangesDialog" timestamp="1600595837883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="746" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595837883" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1602172614626">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602926177735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172614626" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600601234625">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602926177735" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602928567910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600601234625" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602928567910" />
     <state x="720" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1600595964852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -181,22 +219,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="419" key="WebDeployment.AddServerDialog.v.1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602173695774" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602177512178">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602923762198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602177512178" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1602188704324">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602923762198" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1602923848389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602188704324" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602923848389" />
     <state x="796" y="250" key="ftp.server.browser" timestamp="1602175330187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="796" y="250" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602175330187" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1600593535456">
+    <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602928518599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600593535456" />
+    <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602928518599" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1602926821820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602926821820" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602182164102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
