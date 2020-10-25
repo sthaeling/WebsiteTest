@@ -17,8 +17,8 @@ body {
         background-color: $colour-navigation;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        margin: 0 20%;
+        justify-content: center;
+        margin: auto;
 
         .navigation--item {
             background-color: $colour-navigation--item;

@@ -1,0 +1,35 @@
+<script>
+    function Body(radius, counter = 0) {
+        this.radius = radius;
+        this.counter = counter * 2 * Math.PI / 360;
+        this.counterDel = -5 * 2 * Math.PI;
+        this.delCounter = this.counterDel / this.radius ** 2;
+        this.x = this.radius * Math.cos(this.counter);
+        this.y = this.radius * Math.sin(this.counter);
+        this.sizeBody = canvas.width / 70;
+
+        this.draw = function () {
+            //Body Path
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, canvas.height / 2, this.radius, 0, 2 * Math.PI);
+            ctx.stroke();
+
+            //Moving Body
+            ctx.beginPath();
+            ctx.arc(this.x + canvas.width / 2, this.y + canvas.height / 2, this.sizeBody / 2, 0, 2 * Math.PI);
+            ctx.fillStyle = '#00234a';
+            ctx.fill();
+        }
+
+        this.move = function () {
+            this.x = this.radius * Math.cos(this.counter);
+            this.y = this.radius * Math.sin(this.counter);
+        }
+
+        this.update = function () {
+            this.move();
+
+            this.counter += this.delCounter;
+        }
+    }
+</script>
