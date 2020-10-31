@@ -1,0 +1,102 @@
+<script>
+const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
+
+const scale = 1;
+const rows = canvas.height / scale;
+const columns = canvas.width / scale;
+
+if (getCookie('radius') === 'true') {
+    document.getElementById('radius').checked = true;
+} else if (getCookie('radius') === 'false') {
+    document.getElementById('radius').checked = false;
+}
+
+(function setup() {
+    const viewport = {
+        x: document.documentElement.clientWidth,
+        y: document.documentElement.clientHeight
+    };
+
+    if (viewport.x < canvas.width || viewport.y < canvas.height) {
+        let size = Math.max(viewport.x || 0, viewport.y || 0);
+        canvas.width = size;
+        canvas.height = size;
+    }
+
+    function getMousePos(canvas, evt) {
+        let rect = canvas.getBoundingClientRect();
+
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
+
+    function drawSun() {
+        //Center Body
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, 10, 0, 2 * Math.PI);
+        ctx.fillStyle = '#ffd500';
+        ctx.fill();
+    }
+
+    function drawSpace(space, update = false) {
+        for (let i = 0; i < space.length; i++) {
+            if (update === true) {
+                space[i].update();
+            }
+            space[i].draw();
+        }
+    }
+
+    function getMouseRadius(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+
+        x = evt.clientX - rect.left;
+        y = evt.clientY - rect.top;
+
+        x1 = canvas.width / 2;
+        y1 = canvas.height / 2;
+
+        return Math.sqrt(((x - x1)**2 + (y - y1)**2));
+    }
+
+    let space = [];
+
+    canvas.onclick = function (ev) {
+        mouse = getMousePos(canvas, ev);
+        let calc = new Calculation();
+
+        space.push(new Body(getMouseRadius(canvas, ev), calc.getPhase(mouse.x, mouse.y)));
+    };
+
+    drawSun();
+    drawSpace(space);
+
+    window.setInterval(() => {
+        ctx.clearRect(0,0,canvas.width, canvas.height);
+
+        drawSun();
+        drawSpace(space, true);
+    }, 1);
+}());
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>

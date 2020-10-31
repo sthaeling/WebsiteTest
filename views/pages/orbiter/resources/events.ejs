@@ -1,0 +1,6 @@
+<script>
+    canvas.onclick = function (ev) {
+        mouse = getMousePos(canvas, ev);
+        space.push(new Body(getMouseRadius(canvas, ev)));
+    };
+</script>

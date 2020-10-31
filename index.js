@@ -11,6 +11,7 @@ express()
     .get('/',(req, res) => res.render('pages/index'))
     .get('/snake',(req, res) => res.render('pages/snake/main'))
     .get('/commands', (req, res) => res.render('pages/commands/main'))
+    .get('/orbiter', (req, res) => res.render('pages/orbiter/main'))
 
     .set('views', path.join(__dirname, 'views'))
     .set('view engine', 'ejs')

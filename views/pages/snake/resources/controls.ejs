@@ -9,8 +9,6 @@
 
         for (let i = 0; i < controls.length; i++) {
             if (evt.target.id === controls[i]) {
-                console.log(evt.target.id.replace('arrow', ''))
-
                 snake.changeDirection(evt.target.id.replace('arrow', ''));
             }
         }

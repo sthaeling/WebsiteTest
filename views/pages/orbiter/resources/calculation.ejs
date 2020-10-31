@@ -1,0 +1,20 @@
+<script>
+    function Calculation()
+    {
+        this.getPhase = function (x, y) {
+            let dX = canvas.width / 2 - x;
+            let dY = canvas.height / 2 - y;
+
+            if (dX !== 0) {
+                return this.getAngle(x,y,Math.atan(dY/dX));
+            }
+        }
+
+        this.getAngle = function (x,y,phase) {
+            if (x < canvas.width / 2) {
+                return phase * 180 / Math.PI + 180;
+            }
+            return phase * 180 / Math.PI;
+        }
+    }
+</script>
