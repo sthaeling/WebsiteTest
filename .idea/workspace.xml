@@ -19,11 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
+    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Added config linedropping&#10;other stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/_components/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/_components/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/_modules/snake/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/_modules/snake/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/compiled/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/snake/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/main.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/snake/resources/fruit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/snake/resources/fruit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +61,20 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/stylesheets/_modules" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.12.65" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -90,7 +102,10 @@
       <workItem from="1600530258481" duration="1923000" />
       <workItem from="1600532325983" duration="428000" />
       <workItem from="1600540062869" duration="4479000" />
-      <workItem from="1600590116736" duration="8448000" />
+      <workItem from="1600590116736" duration="9098000" />
+      <workItem from="1602172478892" duration="1409000" />
+      <workItem from="1602174122041" duration="2007000" />
+      <workItem from="1602179120495" duration="5984000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>
@@ -122,6 +137,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed routing&#10;added favicon&#10;installed scss (useless for now)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1602175331697">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602175331697" />
+    <state x="536" y="165" key="#SSH_Configurations" timestamp="1602172696039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="165" key="#SSH_Configurations/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172696039" />
+    <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602189529396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602189529396" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600595986231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -130,37 +157,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595973149" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600529506816">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602175294984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600529506816" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602175294984" />
     <state x="746" y="222" key="RollbackChangesDialog" timestamp="1600595837883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="746" y="222" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595837883" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600533336957">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602172614626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600533336957" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172614626" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600601234625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600601234625" />
     <state x="720" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1600595964852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600595964852" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600542300365">
+    <state x="816" y="419" key="WebDeployment.AddServerDialog.v.1" timestamp="1602173695774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600542300365" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1600596545479">
+    <state x="816" y="419" key="WebDeployment.AddServerDialog.v.1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602173695774" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602177512178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600596545479" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602177512178" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1602188704324">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602188704324" />
+    <state x="796" y="250" key="ftp.server.browser" timestamp="1602175330187">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="796" y="250" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602175330187" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1600593535456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600593535456" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600594234775">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602182164102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600594234775" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602182164102" />
   </component>
 </project>
