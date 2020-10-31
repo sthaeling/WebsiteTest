@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="changed favicon" />
+    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +58,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -87,6 +89,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Stefan\Projects\WebstormProjects\WebsiteTest\public\stylesheets\_modules\landingpage" />
       <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
@@ -251,8 +257,11 @@
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603660945741" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603668430215">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172614626" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604155863091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604155863091" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603668430215" />
     <state x="720" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1600595964852">
       <screen x="0" y="0" width="1920" height="1040" />
