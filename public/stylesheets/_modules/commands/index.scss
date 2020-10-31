@@ -1,0 +1,22 @@
+.content.commands {
+    padding: 1rem 0;
+
+    .commandlist {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        width: 100%;
+
+        .commandlist-items {
+            width: 100%;
+            color: $colour-commands-text;
+            font-size: 24px;
+            line-height: 24px;
+            padding-left: 1.5rem;
+            padding-top: 0.4rem;
+            text-align: left;
+            text-indent: -1.5rem;
+            margin: 0;
+        }
+    }
+}
