@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="changed favicon" />
+    <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="bugfix fixed routing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list default="true" id="3b28f2ca-2cd7-46a5-8565-aba1996c2c5c" name="Default Changelist" comment="Changed routing&#10;added favicon&#10;installed scss (useless for now)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/Added-orbiter-module" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,6 +109,13 @@
       <recent name="C:\Users\Stefan\Projects\WebstormProjects\WebsiteTest\views\pages\orbiter\resources" />
       <recent name="C:\Users\Stefan\Projects\WebstormProjects\WebsiteTest\views\partials" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefan\Projects\WebstormProjects\WebsiteTest" />
+      <recent name="C:\Users\Stefan\Projects\WebstormProjects\WebsiteTest\public\stylesheets\_modules\landingpage" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_modules" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\public\stylesheets\_components" />
+      <recent name="C:\Users\Stefan\WebstormProjects\WebsiteTest\views\pages\snake\resources" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -142,6 +151,9 @@
       <workItem from="1604089124844" duration="1048000" />
       <workItem from="1604151458750" duration="1220000" />
       <workItem from="1604154807160" duration="126000" />
+      <workItem from="1604255180782" duration="745000" />
+      <workItem from="1604256327796" duration="60000" />
+      <workItem from="1604270596824" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="Changed routing&#10;added favicon&#10;installed scss (useless for now)">
       <created>1600536538340</created>
@@ -185,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604154900350</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bugfix fixed routing">
+      <created>1604270956029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604270956029</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,13 +228,14 @@
     <MESSAGE value="added commands controller&#10;templates&#10;styling" />
     <MESSAGE value="added orbiter module&#10;changed styling" />
     <MESSAGE value="changed favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed favicon" />
+    <MESSAGE value="bugfix fixed routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix fixed routing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Deployment" timestamp="1603646935141">
+    <state x="552" y="178" key="#Deployment" timestamp="1604270739641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Deployment/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603646935141" />
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604270739641" />
     <state x="536" y="165" key="#SSH_Configurations" timestamp="1602172696039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -244,6 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603649961613" />
+    <state x="705" y="387" key="Github.CreatePullRequestDialog" timestamp="1604270996738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="387" key="Github.CreatePullRequestDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604270996738" />
     <state x="746" y="222" key="RollbackChangesDialog" timestamp="1600595837883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,13 +280,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603660945741" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603668430215">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604270964184">
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602172614626" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604155863091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604155863091" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603668430215" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604270964184" />
     <state x="720" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1600595964852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -279,10 +303,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603667245277" />
-    <state x="796" y="250" key="ftp.server.browser" timestamp="1602175330187">
+    <state x="796" y="250" key="ftp.server.browser" timestamp="1604270738540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="796" y="250" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1602175330187" />
+    <state x="796" y="250" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604270738540" />
     <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602928518599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
