@@ -1,41 +1,119 @@
-.config {
-  color: #eeeeee;
-  text-align: center;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 33%;
-  }
-
-  .config--borders, .config--drop {
-    display: flex;
-    justify-content: space-between;
+.content.snake {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0.5rem 0 0 0;
     width: 100%;
-  }
-}
 
-.control {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 300px;
-
-  .control-panel {
-    color: #eeeeee;
-    font-size: 50px;
-    height: 100px;
-    line-height: 100px;
-    width: 100px;
-
-    &.arrowUp, &.arrowLeft, &.arrowRight, &.arrowDown {
-      background-color: #404040;
-      border: 1px outset black;
-      border-radius: 25px;
+    @media screen and (min-width: $viewportMobileLandscape) {
+        flex-direction: row-reverse;
     }
-  }
 
-  &-top, &-middle, &-bottom {
-    display: flex;
-    flex-direction: row;
-  }
+    @media screen and (min-width: $viewportTablet) {
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width: $viewportTabletLandscape) {
+        flex-direction: row-reverse;
+    }
+
+    .config {
+        color: #eeeeee;
+        margin-right: 1rem;
+        text-align: center;
+
+        @media screen and (min-width: $viewportTablet) {
+            margin: auto;
+        }
+
+        @media screen and (min-width: $viewportDesktop){
+            padding: 0 10%;
+        }
+
+        p {
+            margin: 0.5rem;
+        }
+
+        .config--borders, .config--drop {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .control {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            width: 240px;
+
+            @media screen and (min-width: $viewportTablet){
+                margin: 1rem auto;
+                width: 300px;
+            }
+
+            @media screen and (min-width: $viewportDesktop){
+                display: none;
+                pointer-events: none;
+            }
+
+            .control-panel {
+                color: #eeeeee;
+                font-size: 50px;
+                height: 80px;
+                line-height: 80px;
+                width: 80px;
+
+                @media screen and (min-width: $viewportTablet){
+                    height: 100px;
+                    line-height: 100px;
+                    width: 100px;
+                }
+
+                &.arrowUp, &.arrowLeft, &.arrowRight, &.arrowDown {
+                    background-color: #404040;
+                    border: 1px outset black;
+                    border-radius: 25px;
+                }
+            }
+
+            &-top, &-middle, &-bottom {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+    }
+
+    .game-box .canvas {
+        height: 300px;
+        width: 300px;
+
+        @media screen and (min-width: $viewportTablet){
+            height: 400px;
+            width: 400px;
+        }
+
+        @media screen and (min-width: $viewportTabletLandscape){
+            height: 500px;
+            width: 500px;
+        }
+    }
 }
+
+@media screen and (min-width: $viewportTablet){
+    .content.snake {
+        margin: 0;
+        padding: 4rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $viewportDesktop){
+    .content.snake {
+        flex-direction: row;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+}
+

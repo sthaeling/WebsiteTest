@@ -1,5 +1,7 @@
-body {
-    height: calc(100vh - 3rem);
+@media screen and (min-width: $viewportTablet) {
+    body {
+        height: calc(100vh - 3rem);
+    }
 }
 
 .content.landingpage {

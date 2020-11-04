@@ -11,7 +11,7 @@ sass.render({file: 'public/stylesheets/_index.scss'}, function (err, result) {})
 var http = express();
 
 http.get('*', function(req, res) {
-    res.redirect('https://www.kellario.de' + req.url);
+    res.redirect('https://www.kellario.de'+ req.url);
 })
 
 http.listen(PORT, () => console.log(`Redirecting from ${ PORT }`));
@@ -20,9 +20,9 @@ http.listen(PORTDEFAULT, () => console.log(`Redirecting from ${ PORTDEFAULT }`))
 const https = require("https"),
     fs = require("fs");
 
-var key = fs.readFileSync("/root/user/.ssl/kellario.key"),
-    cert = fs.readFileSync("/root/user/.ssl/primary.crt"),
-    ca = fs.readFileSync("/root/user/.ssl/intermediate.crt");
+var key = fs.readFileSync(`/root/user/.ssl/kellario.key`),
+    cert = fs.readFileSync(`/root/user/.ssl/primary.crt`),
+    ca = fs.readFileSync(`/root/user/.ssl/intermediate.crt`);
 
 const options = {
     key: key,
@@ -36,7 +36,7 @@ app
     .use(express.static(path.join(__dirname, 'public')))
 
     .use(robots(__dirname + '/robots.txt'))
-    .use(robots({ UserAgent: '*', Disallow: '/no-bots', Sitemap: 'http://www.kellario.de/sitemap.xml' }))
+    .use(robots({ UserAgent: '*', Disallow: '/no-bots', Sitemap: `http://www.${ process.env.HOST }.de/sitemap.xml` }))
 
     .get('/',(req, res) => res.render('pages/index'))
     .get('/snake',(req, res) => res.render('pages/snake/main'))
