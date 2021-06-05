@@ -1,0 +1,18 @@
+@media screen and (min-width: $viewportTablet) {
+    body {
+        height: calc(100vh - 3rem);
+    }
+}
+
+.content.landingpage {
+    height: calc(100vh - 3rem);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .landingpage--image {
+        object-fit: contain;
+        height: calc(100vh - 3rem);
+        width: 100vw;
+    }
+}

@@ -18,7 +18,7 @@
 
 <% include ../../partials/nav.ejs %>
 
-<div class="content">
+<div class="content snake">
     <div class="config">
         <p>Settings:</p>
         <div class="config--borders">
@@ -29,9 +29,6 @@
             <span class="config-cheating-title">Automatic Linedropping:</span>
             <input type="checkbox" id="drop" onchange="setCookie('drop', this.checked, 14);">
         </div>
-    </div>
-    <div class="game-box">
-        <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
         <div class="control">
             <div class="control-top">
                 <div class="control-panel topLeft"></div>
@@ -49,6 +46,9 @@
                 <div class="control-panel bottomRight"></div>
             </div>
         </div>
+    </div>
+    <div class="game-box">
+        <canvas id="canvas" class="canvas" height="300" width="300"></canvas>
     </div>
 </div>
 

@@ -1,0 +1,9 @@
+# Gruppe 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Gruppe 2
+User-agent: *
+Allow: /
+
+Sitemap: http://www.kellario.de/sitemap.xml
